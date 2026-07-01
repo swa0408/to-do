@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Covey's Matrix To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcomePage" class="page">
+    <div class="welcome-container">
+      <h1>Prioritize Effectively. Achieve More.</h1>
+      <p class="subtitle">Plan your week with Covey’s Priority Matrix</p>
+
+      <div class="matrix">
+        <div class="quadrant red">
+          <h2>Urgent & Important</h2>
+          <h3>"Do First"</h3>
+          <p>Crisis, Deadlines, Problems</p>
+        </div>
+        <div class="quadrant blue">
+          <h2>Not Urgent & Important</h2>
+          <h3>"Schedule"</h3>
+          <p>Strategy, Planning, Growth</p>
+        </div>
+        <div class="quadrant yellow">
+          <h2>Urgent & Not Important</h2>
+          <h3>"Delegate"</h3>
+          <p>Interruptions, Some Emails, Calls</p>
+        </div>
+        <div class="quadrant green">
+          <h2>Not Urgent & Not Important</h2>
+          <h3>"Eliminate"</h3>
+          <p>Distractions, Trivia, Junk Mail</p>
+        </div>
+      </div>
+
+      <button id="startBtn">Start Your To-Do Journey</button>
+    </div>
+  </div>
+
+  <div id="todoPage" class="page hidden">
+    <h1>Covey's Matrix To-Do List</h1>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter a new task...">
+      <select id="prioritySelect">
+        <option value="red">Urgent & Important 🔴</option>
+        <option value="blue">Not Urgent but Important 🔵</option>
+        <option value="yellow">Urgent but Not Important 🟡</option>
+        <option value="green">Not Urgent & Not Important 🟢</option>
+      </select>
+      <button id="addBtn">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
